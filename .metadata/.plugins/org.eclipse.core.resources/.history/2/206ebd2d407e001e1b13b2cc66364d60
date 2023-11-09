@@ -1,0 +1,11 @@
+package objetos.ejercicio19;
+
+public class ExpressADomicilio implements MecanismoEnvio {
+
+	@Override
+	public double costoEnvio() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

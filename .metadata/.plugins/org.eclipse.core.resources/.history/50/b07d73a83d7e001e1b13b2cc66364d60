@@ -1,0 +1,23 @@
+package objetos.ejercicio19;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Cliente {
+	private String nombre;
+	private String direccion;
+	private List<Pedido> pedidos;
+		
+	public Cliente (String nombre, String direccion) {
+		this.nombre = nombre;
+		this.direccion = direccion;
+	}
+	
+	public boolean esSuNombre (String otroNombre) {
+		return nombre.equals(otroNombre);
+	}
+	
+	public void agregarPedido (Pedido pedido) {
+		pedidos.add(pedido);
+	}
+}

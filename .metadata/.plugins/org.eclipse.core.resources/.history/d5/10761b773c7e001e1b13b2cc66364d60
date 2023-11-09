@@ -1,0 +1,9 @@
+package objetos.ejercicio19;
+
+public class MecanismoEnvio {
+
+	public MecanismoEnvio() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

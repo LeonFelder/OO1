@@ -1,0 +1,20 @@
+package objetos.ejercicio21;
+
+public abstract class Usuario {
+	private String nombre;
+	private double saldo;
+	protected List<Viaje> viajes;
+	
+	public Usuario (String nombre) {
+		this.nombre = nombre;
+		saldo = 0;
+	}
+	
+	public void cargarSaldo (double monto) {
+		saldo += monto;
+	}
+	
+	public void descontarSaldo (double monto) {
+		saldo -= monto;
+	}
+}

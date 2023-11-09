@@ -1,0 +1,15 @@
+package objetos.ejercicio19;
+
+public class seisCuotas implements OpcionPago {
+
+	public seisCuotas() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double devolverPrecioFinal(double precio) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,11 @@
+package objetos.ejercicio19;
+
+public class Vendedor {
+	private String nombre;
+	private String direccion;
+		
+	public Vendedor (String nombre, String direccion) {
+		this.nombre = nombre;
+		this.direccion = direccion;
+	}
+}

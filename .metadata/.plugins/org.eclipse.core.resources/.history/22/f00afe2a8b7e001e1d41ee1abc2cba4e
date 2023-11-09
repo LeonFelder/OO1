@@ -1,0 +1,43 @@
+package objetos.ejercicio21;
+
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.ArrayList;
+
+public class Aplicacion {
+	private List<Usuario> usuarios;
+	private List<Viaje> viajes;
+	
+	public Aplicacion () {
+		usuarios = new ArrayList<>();
+		viajes = new ArrayList<>();
+	}
+	
+	public Conductor agregarConductor (String nombre, Vehiculo vehiculo) {
+		Conductor conductor = new Conductor (nombre, vehiculo);
+		usuarios.add(conductor);
+		return conductor;
+	}
+	
+	public Pasajero agregarPasajero (String nombre) {
+		Pasajero pasajero = new Pasajero (nombre);
+		usuarios.add(pasajero);
+		return pasajero;
+	}
+	
+	public void cargarSaldo (Usuario usuario, double monto) {
+		usuario.cargarSaldo(monto);
+	}
+	
+	public Viaje registrarViaje (String origen, String destino, double costoTotal, Vehiculo vehiculo, LocalDate fecha) {
+		Viaje viaje = new Viaje (origen, destino, costoTotal, vehiculo, fecha);
+		viajes.add(viaje);
+		return viaje;
+	}
+	
+	public List<Viaje> viajesDiaSiguiente (){
+		return viajes.stream()
+				.filter(v -> v.diaSiguiente())
+				.collect(Collectors.toList());
+	}
+}

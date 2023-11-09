@@ -1,0 +1,22 @@
+package objetos.ejercicio19;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Mercado {
+
+		private List<Vendedor> vendedores;
+		private List<Cliente> clientes;
+		
+		public Mercado () {
+			vendedores = new ArrayList<>();
+			clientes = new ArrayList<>();
+		}
+		
+		public Vendedor agregarVendedor (String nombre, String direccion) {
+			Vendedor nuevo = new Vendedor (nombre,direccion);
+			vendedores.add(nuevo);
+			return nuevo;
+		}
+
+}

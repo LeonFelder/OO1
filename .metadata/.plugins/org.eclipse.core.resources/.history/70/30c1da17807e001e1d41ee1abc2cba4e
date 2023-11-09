@@ -1,0 +1,20 @@
+package objetos.ejercicio21;
+
+import java.time.LocalDate;
+
+public class Viaje {
+	private String origen;
+	private String destino;
+	private double costoTotal;
+	private Vehiculo vehiculo;
+	private LocalDate fecha;
+	private int capacidadDisponible;
+	
+	public Viaje (String origen, String destino, double costoTotal, Vehiculo vehiculo, LocalDate fecha) {
+		this.origen = origen;
+		this.destino = destino;
+		this.costoTotal = costoTotal;
+		this.vehiculo = vehiculo;
+		this.fecha = fecha;
+	}
+}

@@ -1,0 +1,31 @@
+package objetos.ejercicio19;
+
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.ArrayList;
+
+public class Vendedor {
+	private String nombre;
+	private String direccion;
+	private List<Producto> productos;
+	
+	public Vendedor (String nombre, String direccion) {
+		this.nombre = nombre;
+		this.direccion = direccion;
+		productos = new ArrayList<Producto>();
+	}
+	
+	public boolean esSuNombre (String otroNombre) {
+		return nombre.equals(otroNombre);
+	}
+	
+	public void agregarProducto (Producto producto) {
+		productos.add(producto);
+	}
+	
+	public List<Producto> buscarProducto () {
+		return productos.stream()
+				.filter(p -> p.esSuNombre())
+				.collect(Collectors.toList());
+	}
+}

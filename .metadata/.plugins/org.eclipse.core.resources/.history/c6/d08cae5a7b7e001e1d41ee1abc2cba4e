@@ -1,0 +1,11 @@
+package objetos.ejercicio21;
+
+public class Usuario {
+	private String nombre;
+	private double saldo;
+	
+	public Usuario (String nombre) {
+		this.nombre = nombre;
+		saldo = 0;
+	}
+}

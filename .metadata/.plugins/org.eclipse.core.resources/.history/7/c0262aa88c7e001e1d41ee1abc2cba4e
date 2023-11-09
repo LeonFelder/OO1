@@ -1,0 +1,11 @@
+package objetos.ejercicio21;
+
+public class Conductor extends Usuario {
+	private Vehiculo vehiculo;
+	
+	public Conductor (String nombre, Vehiculo vehiculo) {
+		super(nombre);
+		this.vehiculo = vehiculo;
+		vehiculo.setDuenio(this);
+	}
+}

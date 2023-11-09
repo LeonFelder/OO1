@@ -1,0 +1,10 @@
+package objetos.ejercicio19;
+
+public class RetirarComercio implements MecanismoEnvio {
+
+	@Override
+	public double costoEnvio() {
+		return 0;
+	}
+
+}

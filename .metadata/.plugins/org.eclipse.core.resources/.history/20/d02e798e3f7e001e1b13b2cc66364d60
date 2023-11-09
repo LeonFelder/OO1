@@ -1,0 +1,15 @@
+package objetos.ejercicio19;
+
+public class RetirarSucursalCorreo implements MecanismoEnvio {
+
+	public RetirarSucursalCorreo() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double costoEnvio() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

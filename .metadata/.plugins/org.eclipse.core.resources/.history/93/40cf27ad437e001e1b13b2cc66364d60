@@ -1,0 +1,9 @@
+package objetos.ejercicio19;
+
+public class RetirarSucursalCorreo implements MecanismoEnvio {
+	@Override
+	public double costoEnvio() {
+		return 50;
+	}
+
+}

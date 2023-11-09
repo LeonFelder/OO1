@@ -1,0 +1,15 @@
+package objetos.ejercicio19;
+
+public class AContado implements MecanismoEnvio {
+
+	public AContado() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double costoEnvio() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,28 @@
+package objetos.ejercicio21;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Aplicacion {
+	private List<Usuario> usuarios;
+	
+	public Aplicacion () {
+		usuarios = new ArrayList<>();
+	}
+	
+	public Conductor agregarConductor (String nombre, Vehiculo vehiculo) {
+		Conductor conductor = new Conductor (nombre, vehiculo);
+		usuarios.add(conductor);
+		return conductor;
+	}
+	
+	public Pasajero agregarPasajero (String nombre) {
+		Pasajero pasajero = new Pasajero (nombre);
+		usuarios.add(pasajero);
+		return pasajero;
+	}
+	
+	public void cargarSaldo (Usuario usuario, double monto) {
+		
+	}
+}

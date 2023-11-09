@@ -1,0 +1,9 @@
+package objetos.ejercicio19;
+
+public class Cliente {
+
+	public Cliente() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

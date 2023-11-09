@@ -1,0 +1,14 @@
+package objetos.ejercicio19;
+
+public class AContado implements MecanismoEnvio {
+
+	public AContado() {
+		
+	}
+
+	@Override
+	public double costoEnvio(double precio) {
+		return precio;
+	}
+
+}

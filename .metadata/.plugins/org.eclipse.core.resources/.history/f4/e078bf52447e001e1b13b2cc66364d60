@@ -1,0 +1,20 @@
+package objetos.ejercicio19;
+
+public class Pedido {
+	private Producto producto;
+	private int cantSolicitada;
+	private OpcionPago opcionPago;
+	private MecanismoEnvio mecanismoEnvio;
+	
+	public Pedido(Producto producto, int cantSolicitada, OpcionPago opcionPago, MecanismoEnvio mecanismoEnvio) {
+		this.producto = producto;
+		this.cantSolicitada = cantSolicitada;
+		this.opcionPago = opcionPago;
+		this.mecanismoEnvio = mecanismoEnvio;
+		producto.actualizarUnidades(cantSolicitada);
+	}
+
+	public double calcularCosto () {
+		return opcionPago.devolverPrecioFinal(producto.getPrecio()*cantSolicitada) + mecanismoEnvio.costoEnvio();
+	}
+}

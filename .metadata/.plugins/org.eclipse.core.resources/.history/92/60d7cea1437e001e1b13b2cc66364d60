@@ -1,0 +1,11 @@
+package objetos.ejercicio19;
+
+public class ExpressADomicilio implements MecanismoEnvio {
+	private Mapa mapa;
+	
+	@Override
+	public double costoEnvio() {
+		return mapa.distanciaEntre(null, null) * 0.5;
+	}
+
+}

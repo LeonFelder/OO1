@@ -1,0 +1,23 @@
+package objetos.ejercicio19;
+
+public class Producto {
+	private String nombre;
+	private String descripcion;
+	private double precio;
+	private int cantUnidades;
+	
+	public Producto(String nombre, String descripcion, double precio, int cantUnidades) {
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.precio = precio;
+		this.cantUnidades = cantUnidades;
+	}
+
+	public boolean esSuNombre (String otroNombre) {
+		return nombre.equals(otroNombre);
+	}
+	
+	public boolean hayUnidades (int cantSolicitadas) {
+		return cantUnidades >= cantSolicitadas;
+	}
+}
